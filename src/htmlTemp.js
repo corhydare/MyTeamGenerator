@@ -3,21 +3,21 @@ const path = require("path");
 
 function templateCard(employees) {
   return employees
-    .map((employee) => {
+    .map((Employee) => {
       return ` 
     <article class="card">
-     <a href="https://github.com/${employee.getGithub()}">
+     <a href="https://github.com/${Employee.getGithub()}">
         <picture class="thumbnail">
-        <img src="https://github.com/${employee.getGithub()}.png?size=100" alt="${employee.getRole()}">
+        <img src="https://github.com/${Employee.getGithub()}.png?size=100" alt="${Employee.getRole()}">
         </picture>
     </a>
     <div class="card-content">
-        <h2>${employee.getName()}}</h2><br>
-        <h2>${employee.getRole()}</h2>
-        <p>ID: ${employee.getId()}</p>
-        <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a> </p>
-        <p>${employee.getOfficeNumber()}</p>
-        <p>${employee.getSchool()}</p>
+        <h2>${Employee.getName()}}</h2><br>
+        <h2>${Employee.getRole()}</h2>
+        <p>ID: ${Employee.getId()}</p>
+        <p>Email: <a href="mailto:${Employee.getEmail()}">${Employee.getEmail()}</a> </p>
+        <p>${Employee.getOfficeNumber()}</p>
+        
     </div>
     </article>
     `;
