@@ -4,25 +4,28 @@ const path = require("path");
 function templateCard(employees) {
   return employees
     .map((employee) => {
-      return ` <article class="card">
-        <a href="https://github.com/${employee.getGithub()}">
-            <picture class="thumbnail">
-                <img src="https://github.com/${employee.getGithub()}.png?size=100" alt="${employee.getRole()}">
-            </picture>
-        </a>
-        <div class="card-content">
-            <h2>${employee.getName()}}</h2><br>
-            <h2>${employee.getRole()}</h2>
-            <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a> </p>
-            <p>${employee.getOfficeNumber()}</p>
-            <p>ID: ${employee.getId()}</p>
-        </div>
-</article>`;
+      return ` 
+    <article class="card">
+     <a href="https://github.com/${employee.getGithub()}">
+        <picture class="thumbnail">
+        <img src="https://github.com/${employee.getGithub()}.png?size=100" alt="${employee.getRole()}">
+        </picture>
+    </a>
+    <div class="card-content">
+        <h2>${employee.getName()}}</h2><br>
+        <h2>${employee.getRole()}</h2>
+        <p>ID: ${employee.getId()}</p>
+        <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a> </p>
+        <p>${employee.getOfficeNumber()}</p>
+        <p>${employee.getSchool()}</p>
+    </div>
+    </article>
+    `;
     })
     .join("\n");
 }
 
-function indexTemplate(employeesALL) {
+function indexTemplate(makeCards) {
   return `
     <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +53,7 @@ function indexTemplate(employeesALL) {
         <div class="centered">
 
             <section class="cards" id="box">
-                ${employeesALL}
+                ${makeCards}
 
             </section>
 
@@ -64,13 +67,17 @@ function indexTemplate(employeesALL) {
 }
 
 function htmlTemp(employees) {
-  const employeesALL = templateCard(employees);
-  const html = indexTemplate(employeesALL);
+  const makeCards = templateCard(employees);
+  const finalPage = indexTemplate(makeCards);
 
-  fs.writeFile(path.join(__dirname, "../dist/", "index.html"), html, (err) => {
-    if (err) throw err;
-    console.log("Something happened");
-  });
+  fs.writeFile(
+    path.join(__dirname, "../dist/", "index.html"),
+    finalPage,
+    (err) => {
+      if (err) throw err;
+      console.warning("Something happaned");
+    }
+  );
 }
 
 module.exports = htmlTemp;
