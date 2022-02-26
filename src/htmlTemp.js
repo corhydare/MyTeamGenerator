@@ -8,15 +8,16 @@ function templateCard(employees) {
     <article class="card">
      <a href="https://github.com/${Employee.getGithub()}">
         <picture class="thumbnail">
-        <img src="https://github.com/${Employee.getGithub()}.png" alt="${Employee.getRole()}">
+        <img src="https://github.com/${Employee.getGithub()}.png?size=100" alt="${Employee.getRole()}">
         </picture>
     </a>
     <div class="card-content">
-        <h2>${Employee.getName()}</h2><br>
+        <h2>Name: ${Employee.getName()}</h2><br>
         <h2>${Employee.getRole()}</h2>
-        <p>ID: ${Employee.getId()}</p>
+        <p>Employee ID: ${Employee.getId()}</p>
         <p>Email: <a href="mailto:${Employee.getEmail()}">${Employee.getEmail()}</a> </p>
-        
+        <p>${Employee.getOfficeNumber()}</p>
+        <p>${Employee.getSchool()}</p>
     </div>
     </article>
     `;
