@@ -8,7 +8,7 @@ function templateCard(employees) {
     <article class="card">
      <a href="https://github.com/${Employee.getGithub()}">
         <picture class="thumbnail">
-        <img src="https://github.com/${Employee.getGithub()}.png?size=100" alt="${Employee.getRole()}">
+        <img src="https://github.com/${Employee.getGithub()}.png" alt="${Employee.getRole()}">
         </picture>
     </a>
     <div class="card-content">
@@ -43,7 +43,7 @@ function indexTemplate(makeCards) {
         <div class="centered">
 
             <div class="site-branding">
-                <h1 class="site-title">Welcome to the team</h1>
+                <h1 class="site-title">Welcome to the Big Brain Ideas' team</h1>
             </div>
         </div>
     </header>

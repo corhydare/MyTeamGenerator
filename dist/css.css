@@ -6,7 +6,12 @@
 /* Card Based Layout - Base styles */
 
 body {
-    background: hsl(0, 0%, 90%);
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(#F8B195, #F67280, #C06C84, #6C5B7B, #355C7D);
 }
 
 /*--------------------------------------------------------------
@@ -36,7 +41,7 @@ h6 {
 
 h2 {
     font-size: 1rem;
-    color: #007489;
+    color: #355C7D;
 }
 
 p {
@@ -121,7 +126,9 @@ big {
 }
 
 .masthead {
-    background-color: #005b75;
+    background-color: #355C7D;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .masthead p,
@@ -151,10 +158,13 @@ img {
 .card a {
     color: black;
     text-decoration: none;
+
 }
 
 .card a:hover {
     box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+    background-color: #F67280;
+    border-radius: 1rem;
 }
 
 .card-content {
