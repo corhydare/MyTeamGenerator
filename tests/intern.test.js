@@ -2,6 +2,12 @@ const Intern = require("../lib/intern");
 
 test("education is set through the constructor", () => {
   const test = "Kindergarden";
-  const expected = new Intern("Not Danila", 123, test);
+  const expected = new Intern("Any", 123, test);
+  expect(expected.school).toBe(test);
+});
+
+test("school function outputs education", () => {
+  const test = "Kindergarden";
+  const expected = new Intern("Any", 123, test);
   expect(1).toBe(2);
 });
