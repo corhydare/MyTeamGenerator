@@ -15,9 +15,5 @@ test("school function outputs education", () => {
 test("interns role overrides employee", () => {
   const test = "intern";
   const expected = new Intern(test);
-  expect(1).toBe(2);
-});
-
-test("", () => {
-  expect(1).toBe(2);
+  expect(expected).toBe(test);
 });
