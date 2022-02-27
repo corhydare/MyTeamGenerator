@@ -13,7 +13,7 @@ test("school function outputs education", () => {
 });
 
 test("interns role overrides employee", () => {
-  const test = "intern";
+  const test = "Intern";
   const expected = new Intern(test);
-  expect(expected).toBe(test);
+  expect(expected.getRole()).toBe(test);
 });
