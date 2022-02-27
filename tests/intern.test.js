@@ -9,5 +9,5 @@ test("education is set through the constructor", () => {
 test("school function outputs education", () => {
   const test = "Kindergarden";
   const expected = new Intern("Any", 123, test);
-  expect(1).toBe(2);
+  expect(expected.getSchool()).toBe(test);
 });
