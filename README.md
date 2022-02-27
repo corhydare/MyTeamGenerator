@@ -33,7 +33,7 @@ Run index.js in the node environment
 
 #### Screenshot
 
-![screenshot](./img/screen.png | width="100")
+![screenshot](./img/screen.png)
 
 #### Video
 
