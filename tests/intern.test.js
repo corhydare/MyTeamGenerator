@@ -11,3 +11,13 @@ test("school function outputs education", () => {
   const expected = new Intern("Any", 123, test);
   expect(expected.getSchool()).toBe(`Education: ${test}`);
 });
+
+test("interns role overrides employee", () => {
+  const test = "intern";
+  const expected = new Intern(test);
+  expect(1).toBe(2);
+});
+
+test("", () => {
+  expect(1).toBe(2);
+});
