@@ -1,19 +1,19 @@
 const Engineer = require("../lib/Engineer");
 
 test("Github username works with links and images", () => {
-  const testValue = "corhydare";
-  const e = new Engineer("Not Danila", 1, testValue);
-  expect(e.github).toBe(testValue);
+  const test = "corhydare";
+  const expected = new Engineer("Not Danila", 123, test);
+  expect(expected.github).toBe(test);
 });
 
 test("getRole() will be Engineer instead of Employee", () => {
-  const testValue = "Engineer";
-  const e = new Engineer("Not Danila", 1, "corhydare");
-  expect(e.getRole()).toBe(testValue);
+  const test = "Engineer";
+  const expected = new Engineer("Not Danila", 123, "corhydare");
+  expect(expected.getRole()).toBe(test);
 });
 
 test("getGithub() works just as well", () => {
-  const testValue = "corhydare";
-  const e = new Engineer("Not Danila", 1, testValue);
-  expect(e.getGithub()).toBe(testValue);
+  const test = "corhydare";
+  const expected = new Engineer("Not Danila", 123, test);
+  expect(expected.getGithub()).toBe(test);
 });
