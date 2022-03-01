@@ -10,7 +10,7 @@ As a manager you want to generate employee ID cards
 
 - [Title](#MyTeamGenerator)
   - [Description](#description)
-- [Installation%20Instructions](#Installation%20Instructions)
+- [Installation Instructions](#installation%20instructions)
 - [Usage](#usage)
   - [Screenshot](#screenshot)
   - [Video](#video)
