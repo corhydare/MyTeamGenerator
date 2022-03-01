@@ -10,7 +10,7 @@ As a manager you want to generate employee ID cards
 
 - [Title](#MyTeamGenerator)
   - [Description](#description)
-- [Installation Instructions](#installation%20instructions)
+- [Installation%20Instructions](#Installation%20Instructions)
 - [Usage](#usage)
   - [Screenshot](#screenshot)
   - [Video](#video)
@@ -37,7 +37,11 @@ Run index.js in the node environment
 
 #### Video
 
-VIDEO LINK HERE
+
+
+
+https://user-images.githubusercontent.com/57278348/156099826-ae47c59f-1cac-4c3e-b487-bab96e613e6b.mp4
+
 
 ## Licenses
 
