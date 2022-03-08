@@ -42,7 +42,7 @@ Run index.js in the node environment
 
 
 
-https://user-images.githubusercontent.com/57278348/156099826-ae47c59f-1cac-4c3e-b487-bab96e613e6b.mp4
+https://github.com/corhydare/MyTeamGenerator/blob/main/dist/full%20demo.mp4?raw=true
 
 
 ## Licenses
