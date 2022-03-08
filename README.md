@@ -5,7 +5,7 @@
 ```
 As a manager you want to generate employee ID cards.
 ```
-Deployed product: https://corhydare.github.io/MyTeamGenerator/
+Deployed product: https://corhydare.github.io/MyTeamGenerator/dist/index.html
 
 
 ## Table of Contents:
